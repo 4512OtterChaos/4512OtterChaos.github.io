@@ -16,7 +16,10 @@ const ContactPage = () => (
     {/* Hero */}
     <Hero>
       <h1>Contact</h1>
-      <p>Have any questions, or just want to talk? Send us an email!</p>
+      <p>
+        Have any questions, or just want to talk? Send us an{" "}
+        <a href="mailto:npalachuk@everettsd.org">email!</a>
+      </p>
     </Hero>
   </Layout>
 )
@@ -51,5 +54,16 @@ const Hero = styled.div`
     max-width: 700px;
     margin: 0 auto;
     animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+
+    a {
+      font-size: 20px;
+      color: var(--main-blue-dark);
+      line-height: 30px;
+      animation: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    a:hover {
+      color: var(--main-blue);
+    }
   }
 `

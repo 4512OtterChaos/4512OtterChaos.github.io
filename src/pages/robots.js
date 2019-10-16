@@ -4,6 +4,7 @@ import styled, { keyframes } from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/Header"
+import TextContainer from "../components/TextContainer"
 
 const RobotsPage = () => (
   <Layout>
@@ -16,8 +17,18 @@ const RobotsPage = () => (
     {/* Hero */}
     <Hero>
       <h1>Robots</h1>
-      <p>If you want to learn more about the specifics, contact us!</p>
+      <p>
+        If you want to learn more about the specifics,{" "}
+        <a href="/contact">contact us!</a>
+      </p>
     </Hero>
+
+    <TextContainer
+      caption="Destination Deep Space"
+      title="Pneutron"
+      paragraph="This game for the 2019 FIRST Robotics Competition. The game involves two alliances of three teams each competing to place hatch covers and rubber 
+balls or “cargo” on rockets and cargo ships before returning to their hab platform to climb at the end of the match."
+    />
   </Layout>
 )
 
@@ -51,5 +62,16 @@ const Hero = styled.div`
     max-width: 700px;
     margin: 0 auto;
     animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+
+    a {
+      font-size: 20px;
+      color: var(--main-blue-dark);
+      line-height: 30px;
+      animation: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    a:hover {
+      color: var(--main-blue);
+    }
   }
 `

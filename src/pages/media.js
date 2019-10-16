@@ -16,7 +16,10 @@ const MediaPage = () => (
     {/* Hero */}
     <Hero>
       <h1>Media</h1>
-      <p>For the latest updates on our media check out our Instagram!</p>
+      <p>
+        For the latest updates on our media check out our{" "}
+        <a href="https://www.instagram.com/otterchaos4512/?hl=en">Instagram.</a>
+      </p>
     </Hero>
   </Layout>
 )
@@ -51,5 +54,16 @@ const Hero = styled.div`
     max-width: 700px;
     margin: 0 auto;
     animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  a {
+    font-size: 20px;
+    color: var(--main-blue-dark);
+    line-height: 30px;
+    animation: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  a:hover {
+    color: var(--main-blue);
   }
 `
