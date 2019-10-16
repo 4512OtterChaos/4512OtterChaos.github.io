@@ -5,23 +5,23 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/Header"
 
-const PageNotFound = () => (
+const SponsorPage = () => (
   <Layout>
     {/* SEO */}
-    <SEO title="404" />
+    <SEO title="Sponsor" />
 
     {/* Header */}
     <Header />
 
     {/* Hero */}
     <Hero>
-      <h1>404</h1>
-      <p>Oh oh, go back home.</p>
+      <h1>Sponsor</h1>
+      <p>Interested in sponsoring? Learn more here!</p>
     </Hero>
   </Layout>
 )
 
-export default PageNotFound
+export default SponsorPage
 
 const HeroAnimation = keyframes`
   from {

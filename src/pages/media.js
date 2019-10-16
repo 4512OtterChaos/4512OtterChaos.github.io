@@ -5,23 +5,23 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/Header"
 
-const PageNotFound = () => (
+const MediaPage = () => (
   <Layout>
     {/* SEO */}
-    <SEO title="404" />
+    <SEO title="Media" />
 
     {/* Header */}
     <Header />
 
     {/* Hero */}
     <Hero>
-      <h1>404</h1>
-      <p>Oh oh, go back home.</p>
+      <h1>Media</h1>
+      <p>For the latest updates on our media check out our Instagram!</p>
     </Hero>
   </Layout>
 )
 
-export default PageNotFound
+export default MediaPage
 
 const HeroAnimation = keyframes`
   from {
