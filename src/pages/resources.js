@@ -4,6 +4,7 @@ import styled, { keyframes } from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 const ResourcePage = () => (
   <Layout>
@@ -20,6 +21,9 @@ const ResourcePage = () => (
         Want to learn more? <a href="/contact">Contact us!</a>
       </p>
     </Hero>
+
+    {/* Footer */}
+    <Footer />
   </Layout>
 )
 

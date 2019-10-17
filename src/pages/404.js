@@ -4,6 +4,7 @@ import styled, { keyframes } from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 const PageNotFound = () => (
   <Layout>
@@ -20,6 +21,9 @@ const PageNotFound = () => (
         Oh oh, go back <a href="/">home.</a>
       </p>
     </Hero>
+
+    {/* Footer */}
+    <Footer />
   </Layout>
 )
 

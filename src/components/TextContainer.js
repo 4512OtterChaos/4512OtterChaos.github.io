@@ -17,7 +17,7 @@ const TextContainer = ({ caption, title, paragraph }) => {
 export default TextContainer
 
 const Container = styled.div`
-  margin: 200px auto;
+  margin: 100px auto 24px;
   max-width: 1024px;
 
   span {
@@ -26,7 +26,12 @@ const Container = styled.div`
     color: var(--main-blue-dark);
     font-weight: 700;
   }
+
   h2 {
     margin: 10px 0 20px 0;
+  }
+
+  p {
+    margin-top: -16px;
   }
 `

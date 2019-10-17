@@ -5,6 +5,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/Header"
 import TextContainer from "../components/TextContainer"
+import Footer from "../components/Footer"
+
+// Robot Images
+import Pneutron from "../images/pneutron.png"
+import Pneutron2 from "../images/pneutron2.png"
 
 const RobotsPage = () => (
   <Layout>
@@ -29,6 +34,14 @@ const RobotsPage = () => (
       paragraph="This game for the 2019 FIRST Robotics Competition. The game involves two alliances of three teams each competing to place hatch covers and rubber 
 balls or “cargo” on rockets and cargo ships before returning to their hab platform to climb at the end of the match."
     />
+
+    <RobotImages>
+      <img src={Pneutron} alt="Robot" />
+      <img src={Pneutron2} alt="Robot" />
+    </RobotImages>
+
+    {/* Footer */}
+    <Footer />
   </Layout>
 )
 
@@ -73,5 +86,16 @@ const Hero = styled.div`
     a:hover {
       color: var(--main-blue);
     }
+  }
+`
+
+const RobotImages = styled.div`
+  margin: 0 auto 24px;
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  img {
+    width: 100%;
   }
 `

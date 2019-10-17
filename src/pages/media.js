@@ -4,6 +4,7 @@ import styled, { keyframes } from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 const MediaPage = () => (
   <Layout>
@@ -21,6 +22,9 @@ const MediaPage = () => (
         <a href="https://www.instagram.com/otterchaos4512/?hl=en">Instagram.</a>
       </p>
     </Hero>
+
+    {/* Footer */}
+    <Footer />
   </Layout>
 )
 

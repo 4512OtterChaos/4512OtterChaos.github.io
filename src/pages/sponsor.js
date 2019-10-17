@@ -4,6 +4,7 @@ import styled, { keyframes } from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 const SponsorPage = () => (
   <Layout>
@@ -18,6 +19,9 @@ const SponsorPage = () => (
       <h1>Sponsor</h1>
       <p>Interested in sponsoring? Learn more here!</p>
     </Hero>
+
+    {/* Footer */}
+    <Footer />
   </Layout>
 )
 
