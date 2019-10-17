@@ -1,10 +1,21 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
+import ReactPlayer from "react-player"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import TextContainer from "../components/TextContainer"
+import BenefitCard from "../components/BenefitCard"
+
+// Benefit Icons
+import Shirt from "../images/shirt.svg"
+import Robot from "../images/robot.svg"
+import Money from "../images/money.svg"
+import Building from "../images/building.svg"
+import Website from "../images/website.svg"
+import Social from "../images/social.svg"
 
 const SponsorPage = () => (
   <Layout>
@@ -19,6 +30,69 @@ const SponsorPage = () => (
       <h1>Sponsor</h1>
       <p>Interested in sponsoring? Learn more here!</p>
     </Hero>
+
+    {/* Introduction Video */}
+    <TextContainer
+      caption="Introduction Video"
+      title="Building a brighter future"
+      paragraph="This game for the 2019 FIRST Robotics Competition. The game involves two alliances of three teams each competing to place hatch covers and rubber 
+      balls or “cargo” on rockets and cargo ships before returning to their hab platform to climb at the end of the match."
+    />
+
+    <VideoContainer>
+      <ReactPlayer
+        url="https://www.youtube.com/watch?v=6R0nl--VB6g"
+        width="100%"
+        height="500px"
+      />
+    </VideoContainer>
+
+    {/* Benefits Video */}
+    <TextContainer
+      caption="Perks"
+      title="Benefits of sponsoring"
+      paragraph="This game for the 2019 FIRST Robotics Competition. The game involves two alliances of three teams each competing to place hatch covers and rubber 
+      balls or “cargo” on rockets and cargo ships before returning to their hab platform to climb at the end of the match."
+    />
+
+    <CardContainer>
+      <BenefitCard
+        img={Shirt}
+        alt="Apparel"
+        title="Branding Promotion"
+        text="Optimized codebase with liquid design to ensure top notch efficiency."
+      />
+      <BenefitCard
+        img={Robot}
+        alt="Robot"
+        title="Robot Demonstrations"
+        text="Optimized codebase with liquid design to ensure top notch efficiency."
+      />
+      <BenefitCard 
+        img={Money} 
+        alt="Money" 
+        title="Tax Deductible" 
+        text="Optimized codebase with liquid design to ensure top notch efficiency." 
+      />
+      <BenefitCard
+        img={Building}
+        alt="Building"
+        title="Helping the community"
+        text="Optimized codebase with liquid design to ensure top notch efficiency."
+      />
+      <BenefitCard
+        img={Website}
+        alt="Website"
+        title="Website Promotion"
+        text="Optimized codebase with liquid design to ensure top notch efficiency."
+      />
+      <BenefitCard
+        img={Social}
+        alt="Instagram"
+        title="Social Media Promotion"
+        text="Optimized codebase with liquid design to ensure top notch efficiency."
+      />
+    </CardContainer>
 
     {/* Footer */}
     <Footer />
@@ -56,4 +130,16 @@ const Hero = styled.div`
     margin: 0 auto;
     animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   }
+`
+
+const VideoContainer = styled.div`
+  margin: 35px auto;
+  max-width: 1024px;
+`
+
+const CardContainer = styled.div`
+  margin: 20px auto;
+  max-width: 1024px;
+  display: flex;
+  flex-wrap: wrap;
 `
