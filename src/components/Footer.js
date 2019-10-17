@@ -20,7 +20,7 @@ const Header = () => {
           </Button>
         </a>
         <a
-          href="https://www.instagram.com/otterchaos4512/?hl=en"
+          href="https://www.youtube.com/user/Bearbots"
           target="_blank"
         >
           <Button>
