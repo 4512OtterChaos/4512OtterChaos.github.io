@@ -30,8 +30,8 @@ const TeamPage = () => (
     />
 
     <CardContainer>
-      <Card name="Neil Palachuk" role="Head Coach" />
-      <Card name="Steven Knoefler" role="Assistant Coach" />
+      <Card name="Neil Palachuk" title="Head Coach" />
+      <Card name="Steven Knoefler" title="Assistant Coach" />
     </CardContainer>
 
     {/* Mentors */}
@@ -42,8 +42,8 @@ const TeamPage = () => (
     />
 
     <CardContainer>
-      <Card name="Zach Forester" role="Programming - Boeing" />
-      <Card name="Patrick N." role="Design - Boeing" />
+      <Card name="Zach Forester" title="Programming - Boeing" />
+      <Card name="Patrick N." title="Design - Boeing" />
     </CardContainer>
 
     {/* Students */}
@@ -54,22 +54,22 @@ const TeamPage = () => (
     />
 
     <CardContainer>
-      <Card name="Henry Beason" role="Head Director" />
-      <Card name="Nolan Brown" role="Programming Director" />
-      <Card name="Ethan Zoller" role="Business Director" />
-      <Card name="Moses Tran" role="Media Director" />
-      <Card name="Farrel Sudrajat" role="Branding Director" />
-      <Card name="Daisy Cisneros" role="Programming" />
-      <Card name="Jack Landers" role="Programming" />
-      <Card name="Ricardo Torres" role="Manufacturing" />
-      <Card name="Fiona Carpenter" role="Manufacturing" />
-      <Card name="Braeden Solorio" role="Manufacturing" />
-      <Card name="Casey Deckers" role="Manufacturing" />
-      <Card name="Scott Blacklock" role="Programming" />
-      <Card name="Hunter Lilley" role="Manufacturing" />
-      <Card name="Gregory Jabido" role="Design" />
-      <Card name="Graeme Richards" role="Design" />
-      <Card name="Francis Ricafrente" role="Programming" />
+      <Card name="Henry Beason" title="Head Director" />
+      <Card name="Nolan Brown" title="Programming Director" />
+      <Card name="Ethan Zoller" title="Business Director" />
+      <Card name="Moses Tran" title="Media Director" />
+      <Card name="Farrel Sudrajat" title="Branding Director" />
+      <Card name="Daisy Cisneros" title="Programming" />
+      <Card name="Jack Landers" title="Programming" />
+      <Card name="Ricardo Torres" title="Manufacturing" />
+      <Card name="Fiona Carpenter" title="Manufacturing" />
+      <Card name="Braeden Solorio" title="Manufacturing" />
+      <Card name="Casey Deckers" title="Manufacturing" />
+      <Card name="Scott Blacklock" title="Programming" />
+      <Card name="Hunter Lilley" title="Manufacturing" />
+      <Card name="Gregory Jabido" title="Design" />
+      <Card name="Graeme Richards" title="Design" />
+      <Card name="Francis Ricafrente" title="Programming" />
     </CardContainer>
 
     {/* Footer */}

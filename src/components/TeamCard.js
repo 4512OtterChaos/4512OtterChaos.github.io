@@ -2,13 +2,13 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "./layout"
 
-const Header = ({ name, role }) => {
+const Header = ({ name, title }) => {
   return (
     <Layout>
       <Card>
         <Content>
           <h3>{name}</h3>
-          <p>{role}</p>
+          <p>{title}</p>
         </Content>
       </Card>
     </Layout>
