@@ -60,37 +60,37 @@ const SponsorPage = () => (
         img={Shirt}
         alt="Apparel"
         title="Branding Promotion"
-        text="Optimized codebase with liquid design to ensure top notch efficiency."
+        text="Get your brand logo showcased on our robot and banners."
       />
       <BenefitCard
         img={Robot}
         alt="Robot"
         title="Robot Demonstrations"
-        text="Optimized codebase with liquid design to ensure top notch efficiency."
+        text="Invite us to showcase and drive our robots at your company."
       />
-      <BenefitCard 
-        img={Money} 
-        alt="Money" 
-        title="Tax Deductible" 
-        text="Optimized codebase with liquid design to ensure top notch efficiency." 
+      <BenefitCard
+        img={Money}
+        alt="Money"
+        title="Tax Deductible"
+        text="Since FirstWA is an 501(c)(3) organization that allows for sponsorships  to be partially tax deductible."
       />
       <BenefitCard
         img={Building}
         alt="Building"
         title="Helping the community"
-        text="Optimized codebase with liquid design to ensure top notch efficiency."
+        text="Create the community you aspire to build."
       />
       <BenefitCard
         img={Website}
         alt="Website"
         title="Website Promotion"
-        text="Optimized codebase with liquid design to ensure top notch efficiency."
+        text="Get your brand logo promoted on our website home page."
       />
       <BenefitCard
         img={Social}
         alt="Instagram"
         title="Social Media Promotion"
-        text="Optimized codebase with liquid design to ensure top notch efficiency."
+        text="Get your brand logo promoted through our social media posts."
       />
     </CardContainer>
 
