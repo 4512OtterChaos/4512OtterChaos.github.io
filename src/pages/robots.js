@@ -3,7 +3,6 @@ import styled, { keyframes } from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/Header"
 import TextContainer from "../components/TextContainer"
 import Footer from "../components/Footer"
 
@@ -17,7 +16,6 @@ const RobotsPage = () => (
     <SEO title="Robots" />
 
     {/* Header */}
-    <Header />
 
     {/* Hero */}
     <Hero>

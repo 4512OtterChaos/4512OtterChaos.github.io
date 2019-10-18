@@ -3,7 +3,6 @@ import styled, { keyframes } from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/Header"
 import TextContainer from "../components/TextContainer"
 import Card from "../components/TeamCard"
 import Footer from "../components/Footer"
@@ -14,7 +13,6 @@ const TeamPage = () => (
     <SEO title="Team" />
 
     {/* Header */}
-    <Header />
 
     {/* Hero */}
     <Hero>

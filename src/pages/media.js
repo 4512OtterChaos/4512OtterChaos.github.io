@@ -3,7 +3,6 @@ import styled, { keyframes } from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/Header"
 import Footer from "../components/Footer"
 
 const MediaPage = () => (
@@ -12,7 +11,6 @@ const MediaPage = () => (
     <SEO title="Media" />
 
     {/* Header */}
-    <Header />
 
     {/* Hero */}
     <Hero>

@@ -2,12 +2,10 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 
 import Layout from "../components/layout"
-import Header from "../components/Header"
 
 const IndexPage = () => (
   <Layout>
     {/* Header */}
-    <Header />
 
     {/* Hero */}
     <Hero>
