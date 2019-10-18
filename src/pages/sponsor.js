@@ -4,6 +4,7 @@ import ReactPlayer from "react-player"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Header from "../components/Header"
 import Footer from "../components/Footer"
 import TextContainer from "../components/TextContainer"
 import BenefitCard from "../components/BenefitCard"
@@ -22,6 +23,7 @@ const SponsorPage = () => (
     <SEO title="Sponsor" />
 
     {/* Header */}
+    <Header />
 
     {/* Hero */}
     <Hero>

@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Header from "../components/Header"
 import Footer from "../components/Footer"
 
 const PageNotFound = () => (
@@ -11,6 +12,7 @@ const PageNotFound = () => (
     <SEO title="404" />
 
     {/* Header */}
+    <Header />
 
     {/* Hero */}
     <Hero>
