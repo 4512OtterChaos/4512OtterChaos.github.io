@@ -14,6 +14,7 @@ const Header = () => {
         <a
           href="https://www.instagram.com/otterchaos4512/?hl=en"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <Button>
             <img src={Instagram} alt="Instagram" />
@@ -22,6 +23,7 @@ const Header = () => {
         <a
           href="https://www.youtube.com/user/Bearbots"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <Button>
             <img src={Youtube} alt="Youtube" />
