@@ -12,12 +12,12 @@ const Header = () => {
             <img src={require("../images/logo.svg")} alt="Otter Chaos Logo" />
           </Link>
           <Links>
-            <a href="/robots">Robots</a>
-            <a href="/media">Media</a>
-            <a href="/sponsor">Sponsor</a>
-            <a href="/team">Team</a>
-            <a href="/resources">Resources</a>
-            <a href="/contact">Contact</a>
+            <Link to="/robots">Robots</Link>
+            <Link to="/media">Media</Link>
+            <Link to="/sponsor">Sponsor</Link>
+            <Link to="/team">Team</Link>
+            <Link to="/resources">Resources</Link>
+            <Link to="/contact">Contact</Link>
           </Links>
         </Container>
       </Heading>
