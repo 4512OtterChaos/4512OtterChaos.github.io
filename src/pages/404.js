@@ -18,7 +18,7 @@ const PageNotFound = () => (
     <Hero>
       <h1>404</h1>
       <p>
-        Oh oh, go back <a href="/">home.</a>
+        Uh oh, go back <a href="/">home.</a>
       </p>
     </Hero>
 
