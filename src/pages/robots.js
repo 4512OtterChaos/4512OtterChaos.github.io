@@ -31,14 +31,20 @@ const RobotsPage = () => (
     <TextContainer
       caption="Destination Deep Space"
       title="Pneutron"
-      paragraph="This game for the 2019 FIRST Robotics Competition. The game involves two alliances of three teams each competing to place hatch covers and rubber 
+      paragraph="This robot was for the 2019 FIRST Robotics Competition. The game involves two alliances of three teams each competing to place hatch covers and rubber 
 balls or “cargo” on rockets and cargo ships before returning to their hab platform to climb at the end of the match."
     />
 
     <RobotImages>
-      <img src={Pneutron} alt="Robot" />
-      <img src={Pneutron2} alt="Robot" />
+      <img src={Pneutron} alt="Robot Front View" />
+      <img src={Pneutron2} alt="Robot Back View" />
     </RobotImages>
+
+    <TextContainer
+      caption="Power Up"
+      title="DUGG"
+      paragraph="This robot was for the 2018 FIRST Robotics Competition. The game involves two alliances of three teams each competing to place power cubes on large balancing scales to tip the scale to gain ownership or trade them in for powerups in order to win."
+    />
 
     {/* Footer */}
     <Footer />
