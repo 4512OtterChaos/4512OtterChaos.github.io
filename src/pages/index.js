@@ -1,7 +1,7 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 
-import Layout from "../components/layout"
+import Layout from "../components/layout.css"
 import Header from "../components/Header"
 
 const IndexPage = () => (
