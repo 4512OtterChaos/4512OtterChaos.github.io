@@ -38,8 +38,7 @@ const SponsorPage = () => (
     <TextContainer
       caption="Introduction Video"
       title="Building a brighter future"
-      paragraph="This game for the 2019 FIRST Robotics Competition. The game involves two alliances of three teams each competing to place hatch covers and rubber 
-      balls or “cargo” on rockets and cargo ships before returning to their hab platform to climb at the end of the match."
+      paragraph='Combining the excitement of sport with the rigors of science and technology. We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have."'
     />
 
     <VideoContainer>
@@ -54,8 +53,7 @@ const SponsorPage = () => (
     <TextContainer
       caption="Perks"
       title="Benefits of sponsoring"
-      paragraph="This game for the 2019 FIRST Robotics Competition. The game involves two alliances of three teams each competing to place hatch covers and rubber 
-      balls or “cargo” on rockets and cargo ships before returning to their hab platform to climb at the end of the match."
+      paragraph="We want to support our sponsors as much as they support us, here are some ways we are able to return the favor for our sponsors!"
     />
 
     <CardContainer>
@@ -130,7 +128,7 @@ const Hero = styled.div`
 
   p {
     max-width: 700px;
-    margin: 0 auto 20px;
+    margin: 0 auto 30px;
     animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   }
 `
