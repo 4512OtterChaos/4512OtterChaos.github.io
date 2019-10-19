@@ -16,6 +16,8 @@ import Money from "../images/money.svg"
 import Building from "../images/building.svg"
 import Website from "../images/website.svg"
 import Social from "../images/social.svg"
+import Resources from "../images/resources.svg"
+import Mentors from "../images/mentors.svg"
 
 const SponsorPage = () => (
   <Layout>
@@ -92,6 +94,34 @@ const SponsorPage = () => (
         alt="Instagram"
         title="Social Media Promotion"
         text="Get your brand logo promoted through our social media posts."
+      />
+    </CardContainer>
+
+    {/* What we need */}
+    <TextContainer
+      caption="Needs"
+      title="What we are looking for"
+      paragraph="We need many resources for our upcoming season to be possible, here are some of the major needs."
+    />
+
+    <CardContainer>
+      <BenefitCard
+        img={Money}
+        alt="Money"
+        title="Money"
+        text="Our major need is money to pay for parts, travel, apparel, and much more for our upcoming season."
+      />
+      <BenefitCard
+        img={Mentors}
+        alt="Mentors"
+        title="Mentors"
+        text="Having knowledgable people from industry to help our students is a huge help."
+      />
+      <BenefitCard
+        img={Resources}
+        alt="Resources"
+        title="Resources"
+        text="We also look for spare parts, tools, and other resources in order to enable our students to build."
       />
     </CardContainer>
 
