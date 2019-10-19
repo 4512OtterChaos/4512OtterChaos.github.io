@@ -29,6 +29,9 @@ const SponsorPage = () => (
     <Hero>
       <h1>Sponsor</h1>
       <p>Interested in sponsoring? Learn more here!</p>
+      <Button href="https://sites.google.com/site/bruincommunityparents/donate">
+        Become a sponsor
+      </Button>
     </Hero>
 
     {/* Introduction Video */}
@@ -127,7 +130,7 @@ const Hero = styled.div`
 
   p {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   }
 `
@@ -142,4 +145,13 @@ const CardContainer = styled.div`
   max-width: 1024px;
   display: flex;
   flex-wrap: wrap;
+`
+
+const Button = styled.a`
+  border-radius: 4px;
+  background: var(--main-blue-dark);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 16px;
+  color: white;
 `
