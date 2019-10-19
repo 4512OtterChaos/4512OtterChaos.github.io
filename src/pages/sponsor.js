@@ -73,7 +73,7 @@ const SponsorPage = () => (
         img={Money}
         alt="Money"
         title="Tax Deductible"
-        text="Since FirstWA is an 501(c)(3) organization that allows for sponsorships  to be partially tax deductible."
+        text="Since FirstWA is an 501(c)(3) organization that allows for sponsorships to be tax deductible."
       />
       <BenefitCard
         img={Building}
