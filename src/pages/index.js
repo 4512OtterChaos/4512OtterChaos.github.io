@@ -63,6 +63,7 @@ const Hero = styled.div`
   max-width: 768px;
   text-align: center;
   animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+
   span {
     font-size: 12px;
     font-family: "Inter", sans-serif;
@@ -71,10 +72,12 @@ const Hero = styled.div`
     letter-spacing: 8px;
     animation: ${HeroAnimation} 0.8s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   }
+
   h1 {
     margin-top: 10px;
     animation: ${HeroAnimation} 1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   }
+
   p {
     max-width: 700px;
     margin: 0 auto;

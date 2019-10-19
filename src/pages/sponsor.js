@@ -10,14 +10,14 @@ import TextContainer from "../components/TextContainer"
 import BenefitCard from "../components/BenefitCard"
 
 // Benefit Icons
-import Shirt from "../images/shirt.svg"
-import Robot from "../images/robot.svg"
-import Money from "../images/money.svg"
-import Building from "../images/building.svg"
-import Website from "../images/website.svg"
-import Social from "../images/social.svg"
-import Resources from "../images/resources.svg"
-import Mentors from "../images/mentors.svg"
+import Shirt from "../images/icons/shirt.svg"
+import Robot from "../images/icons/robot.svg"
+import Money from "../images/icons/money.svg"
+import Building from "../images/icons/building.svg"
+import Website from "../images/icons/website.svg"
+import Social from "../images/icons/social.svg"
+import Resources from "../images/icons/resources.svg"
+import Mentors from "../images/icons/mentors.svg"
 
 const SponsorPage = () => (
   <Layout>

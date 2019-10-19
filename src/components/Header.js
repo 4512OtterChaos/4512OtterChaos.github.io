@@ -9,7 +9,10 @@ const Header = () => {
       <Heading>
         <Container>
           <Link to="/">
-            <img src={require("../images/logo.svg")} alt="Otter Chaos Logo" />
+            <img
+              src={require("../images/logos/logo.svg")}
+              alt="Otter Chaos Logo"
+            />
           </Link>
           <Links>
             <Link to="/robots">Robots</Link>

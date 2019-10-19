@@ -23,6 +23,10 @@ const MediaPage = () => (
       </p>
     </Hero>
 
+    <PhotoGallary>
+      <img src="" alt="" />
+    </PhotoGallary>
+
     {/* Footer */}
     <Footer />
   </Layout>
@@ -70,4 +74,11 @@ const Hero = styled.div`
   a:hover {
     color: var(--main-blue);
   }
+`
+
+const PhotoGallary = styled.div`
+  margin: 100px auto;
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 `

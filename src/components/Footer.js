@@ -3,9 +3,9 @@ import styled from "styled-components"
 import Layout from "./layout"
 
 // Social Icons
-import Instagram from "../images/instagram.svg"
-import Youtube from "../images/youtube.svg"
-import Email from "../images/email.svg"
+import Instagram from "../images/icons/instagram.svg"
+import Youtube from "../images/icons/youtube.svg"
+import Email from "../images/icons/email.svg"
 
 const Header = () => {
   return (

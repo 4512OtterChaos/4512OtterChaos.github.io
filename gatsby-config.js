@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Otter Chaos - FRC 4512`,
-    description: `Learning and striving for better steam through high school robotics.`,
+    description: `Learning and striving for better STEAM through high school robotics.`,
     author: `@otterchaos4512`,
   },
   plugins: [
@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/logo.svg`, // This path is relative to the root of the site.
+        icon: `src/images/logos/logo.svg`, // This path is relative to the root of the site.
       },
     },
   ],

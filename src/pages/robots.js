@@ -8,10 +8,10 @@ import TextContainer from "../components/TextContainer"
 import Footer from "../components/Footer"
 
 // Robot Images
-import Pneutron from "../images/pneutron.png"
-import Pneutron2 from "../images/pneutron2.png"
-import Dugg from "../images/dugg.png"
-import Dugg2 from "../images/dugg2.png"
+import Pneutron from "../images/graphics/pneutron.png"
+import Pneutron2 from "../images/graphics/pneutron2.png"
+import Dugg from "../images/graphics/dugg.png"
+import Dugg2 from "../images/graphics/dugg2.png"
 
 const RobotsPage = () => (
   <Layout>
