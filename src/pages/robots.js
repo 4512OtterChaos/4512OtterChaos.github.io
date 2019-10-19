@@ -10,6 +10,8 @@ import Footer from "../components/Footer"
 // Robot Images
 import Pneutron from "../images/pneutron.png"
 import Pneutron2 from "../images/pneutron2.png"
+import Dugg from "../images/dugg.png"
+import Dugg2 from "../images/dugg2.png"
 
 const RobotsPage = () => (
   <Layout>
@@ -45,6 +47,11 @@ balls or “cargo” on rockets and cargo ships before returning to their hab pl
       title="DUGG"
       paragraph="This robot was for the 2018 FIRST Robotics Competition. The game involves two alliances of three teams each competing to place power cubes on large balancing scales to tip the scale to gain ownership or trade them in for powerups in order to win."
     />
+
+    <RobotImages>
+      <img src={Dugg} alt="Robot Front View" />
+      <img src={Dugg2} alt="Robot Back View" />
+    </RobotImages>
 
     {/* Footer */}
     <Footer />
