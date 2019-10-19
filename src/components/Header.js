@@ -43,16 +43,26 @@ const Container = styled.div`
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   height: 100%;
+
   img {
     width: 40px;
+  }
+
+  @media (max-width: 1024px) {
+    width: 90%;
   }
 `
 
 const Links = styled.div`
   text-align: right;
+
   a {
     font-size: 14px;
     text-transform: uppercase;
     margin-left: 20px;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `

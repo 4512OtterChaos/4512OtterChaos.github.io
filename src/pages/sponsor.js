@@ -166,13 +166,30 @@ const Hero = styled.div`
 const VideoContainer = styled.div`
   margin: 35px auto;
   max-width: 1024px;
+
+  @media (max-width: 1024px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 `
 
 const CardContainer = styled.div`
   margin: 20px auto;
   max-width: 1024px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 1024px) {
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 
 const Button = styled.a`

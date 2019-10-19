@@ -111,8 +111,23 @@ const Hero = styled.div`
 `
 
 const CardContainer = styled.div`
-  margin: 20px auto;
+  margin: 20px auto 50px;
   max-width: 1024px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media (max-width: 1024px) {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 380px) {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
 `

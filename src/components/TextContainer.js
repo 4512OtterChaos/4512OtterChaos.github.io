@@ -34,4 +34,9 @@ const Container = styled.div`
   p {
     margin-top: -16px;
   }
+
+  @media (max-width: 1024px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 `

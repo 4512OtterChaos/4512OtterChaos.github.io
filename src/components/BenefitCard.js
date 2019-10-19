@@ -24,6 +24,11 @@ const Card = styled.div`
   width: 330px;
   border-radius: 8px;
   margin: 8px 8px 0 0;
+
+  @media (max-width: 1024px) {
+    width: 90%;
+    margin: 0 auto 24px;
+  }
 `
 
 const Content = styled.div`
