@@ -1,8 +1,11 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
+import ReactPlayer from "react-player"
 
 import Layout from "../components/layout"
 import Header from "../components/Header"
+import TextContainer from "../components/TextContainer"
+import Footer from "../components/Footer"
 
 const IndexPage = () => (
   <Layout>
@@ -24,6 +27,21 @@ const IndexPage = () => (
       <WavePrimary />
       <WaveSecondary />
     </Ocean>
+
+    {/* About */}
+    <AboutSection>
+      <TextContainer caption="About" title="Meet Otter Chaos" paragraph="We strive for learning and improving STEAM through our students by building robots! We are comprised of students from both Cascade and Everett high school." />
+      <VideoContainer>
+        <ReactPlayer
+          url="https://www.youtube.com/watch?v=qN16EgI6CkY"
+          width="100%"
+          height="500px"
+        />
+      </VideoContainer> 
+    </AboutSection>
+
+    {/* Footer */}
+    <Footer />
   </Layout>
 )
 
@@ -116,4 +134,18 @@ const WaveSecondary = styled.div`
     ${SwellAnimation} 7s ease -1.25s infinite;
   opacity: 1;
   transform: translate3d(0, 0, 0);
+`
+
+const AboutSection = styled.div`
+  margin-top: 625px;
+`
+
+const VideoContainer = styled.div`
+  margin: 35px auto;
+  max-width: 1024px;
+
+  @media (max-width: 1024px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 `
