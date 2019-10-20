@@ -29,7 +29,7 @@ const Header = () => {
             <img src={Youtube} alt="Youtube" />
           </Button>
         </a>
-        <a href="mailto:otterchaos4512@gmail.com" target="_blank">
+        <a href="mailto:otterchaos4512@gmail.com" target="_blank" rel="noopener noreferrer">
           <Button>
             <img src={Email} alt="Email Envelope" />
           </Button>
