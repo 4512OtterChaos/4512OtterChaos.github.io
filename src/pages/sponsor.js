@@ -31,7 +31,10 @@ const SponsorPage = () => (
     <Hero>
       <h1>Sponsor</h1>
       <p>Interested in sponsoring? Learn more here!</p>
-      <Button href="https://sites.google.com/site/bruincommunityparents/donate">
+      <Button
+        href="https://sites.google.com/site/bruincommunityparents/donate"
+        target="_blank"
+      >
         Become a sponsor
       </Button>
     </Hero>
