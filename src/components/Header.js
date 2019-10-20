@@ -32,7 +32,7 @@ export default Header
 
 const Heading = styled.div`
   width: 100%;
-  height: 65px;
+  height: 80px;
   border-bottom: 1px var(--main-grey-light) solid;
 `
 
@@ -45,7 +45,7 @@ const Container = styled.div`
   height: 100%;
 
   img {
-    width: 40px;
+    width: 65px;
   }
 
   @media (max-width: 1024px) {
