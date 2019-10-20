@@ -13,14 +13,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `otterchaos4512`,
-        access_token: "a valid access token",
-        instagram_id: "your instagram_business_account id",
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
