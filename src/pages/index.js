@@ -74,7 +74,7 @@ const Hero = styled.div`
   }
 
   h1 {
-    margin-top: 10px;
+    margin: 10px 0 15px;
     animation: ${HeroAnimation} 1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   }
 
