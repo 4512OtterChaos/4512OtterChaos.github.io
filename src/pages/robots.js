@@ -31,7 +31,7 @@ const RobotsPage = () => (
     </Hero>
 
     <TextContainer
-      caption="Destination Deep Space"
+      caption="Destination Deep Space - 2019"
       title="Pneutron"
       paragraph="This robot was for the 2019 FIRST Robotics Competition. The game involves two alliances of three teams each competing to place hatch covers and rubber 
 balls or “cargo” on rockets and cargo ships before returning to their hab platform to climb at the end of the match."
@@ -43,7 +43,7 @@ balls or “cargo” on rockets and cargo ships before returning to their hab pl
     </RobotImages>
 
     <TextContainer
-      caption="Power Up"
+      caption="Power Up - 2018"
       title="DUGG"
       paragraph="This robot was for the 2018 FIRST Robotics Competition. The game involves two alliances of three teams each competing to place power cubes on large balancing scales to tip the scale to gain ownership or trade them in for powerups in order to win."
     />
