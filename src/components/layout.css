@@ -50,6 +50,7 @@ p {
   color: var(--main-grey-dark);
   font-family: "San Francisco", sans-serif;
   line-height: 30px;
+  font-weight: bold;
 }
 
 a {
