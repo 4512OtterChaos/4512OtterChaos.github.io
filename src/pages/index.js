@@ -28,6 +28,8 @@ const IndexPage = () => (
       <WaveSecondary />
     </Ocean>
 
+    {/* Sponsors */}
+
     {/* About */}
     <AboutSection>
       <TextContainer caption="About" title="Meet Otter Chaos" paragraph="We strive for learning and improving STEAM through our students by building robots! We are comprised of students from both Cascade and Everett high school." />

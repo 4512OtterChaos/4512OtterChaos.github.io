@@ -1,6 +1,7 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import ReactPlayer from "react-player"
+import ReactTooltip from "react-tooltip"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -34,9 +35,11 @@ const SponsorPage = () => (
       <Button
         href="https://sites.google.com/site/bruincommunityparents/donate"
         target="_blank"
+        data-tip='Please specify "For CHS Robotics Club"'
       >
         Become a sponsor
       </Button>
+      <ReactTooltip place="bottom" type="success" effect="float" />
     </Hero>
 
     {/* Introduction Video */}
