@@ -2,7 +2,6 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import ReactPlayer from "react-player"
 import ReactTooltip from "react-tooltip"
-import SweetAlert from "react-bootstrap-sweetalert"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -33,15 +32,14 @@ const SponsorPage = () => (
     <Hero>
       <h1>Sponsor</h1>
       <p>Interested in sponsoring? Learn more here!</p>
-      <SweetAlert success title="Woot!" onConfirm={this.hideAlert}>
-        <Button
-          href="https://sites.google.com/site/bruincommunityparents/donate"
-          target="_blank"
-          data-tip='Please specify "For CHS Robotics Team"'
-        >
-          Become a sponsor
-        </Button>
-      </SweetAlert>
+      <Button
+        href="https://sites.google.com/site/bruincommunityparents/donate"
+        target="_blank"
+        data-tip='Please specify "For CHS Robotics Team"'
+        onClick={e => window.alert('Please specify "For CHS Robotics Team"')}
+      >
+        Become a sponsor
+      </Button>
       <ReactTooltip place="bottom" type="success" effect="float" />
     </Hero>
 
