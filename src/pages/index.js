@@ -3,12 +3,16 @@ import styled, { keyframes } from "styled-components"
 import ReactPlayer from "react-player"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import Header from "../components/Header"
 import TextContainer from "../components/TextContainer"
 import Footer from "../components/Footer"
 
 const IndexPage = () => (
   <Layout>
+    {/* SEO */}
+    <SEO title="Home" />
+
     {/* Header */}
     <Header />
 
@@ -32,14 +36,18 @@ const IndexPage = () => (
 
     {/* About */}
     <AboutSection>
-      <TextContainer caption="About" title="Meet Otter Chaos" paragraph="We strive for learning and improving STEAM through our students by building robots! We are comprised of students from both Cascade and Everett high school." />
+      <TextContainer
+        caption="About"
+        title="Meet Otter Chaos"
+        paragraph="We strive for learning and improving STEAM through our students by building robots! We are comprised of students from both Cascade and Everett high school."
+      />
       <VideoContainer>
         <ReactPlayer
           url="https://www.youtube.com/watch?v=qN16EgI6CkY"
           width="100%"
           height="500px"
         />
-      </VideoContainer> 
+      </VideoContainer>
     </AboutSection>
 
     {/* Footer */}
