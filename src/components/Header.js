@@ -16,10 +16,8 @@ const Header = () => {
           </Link>
           <Links>
             <Link to="/robots">Robots</Link>
-            <Link to="/media">Media</Link>
             <Link to="/sponsor">Sponsor</Link>
             <Link to="/team">Team</Link>
-            <Link to="/resources">Resources</Link>
             <Link to="/contact">Contact</Link>
           </Links>
         </Container>
