@@ -29,6 +29,10 @@ const Card = styled.div`
     width: 90%;
     margin: 0 auto 24px;
   }
+
+  @media (max-width: 420px) {
+    width: 100;
+  }
 `
 
 const Content = styled.div`

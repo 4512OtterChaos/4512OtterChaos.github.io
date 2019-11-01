@@ -168,6 +168,10 @@ const Hero = styled.div`
     margin: 0 auto 30px;
     animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   }
+
+  @media (max-width: 420px) {
+    width: 90%;
+  }
 `
 
 const VideoContainer = styled.div`
@@ -177,6 +181,10 @@ const VideoContainer = styled.div`
   @media (max-width: 1024px) {
     width: 90%;
     margin: 0 auto;
+  }
+
+  @media (max-width: 420px) {
+    margin-bottom: 100px;
   }
 `
 
@@ -196,6 +204,10 @@ const CardContainer = styled.div`
     width: 90%;
     margin: 0 auto;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (max-width: 420px) {
+    margin-bottom: 100px;
   }
 `
 

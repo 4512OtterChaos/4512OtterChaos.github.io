@@ -111,6 +111,14 @@ const Hero = styled.div`
     margin: 0 auto;
     animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   }
+
+  @media (max-width: 420px) {
+    width: 90%;
+
+    h1 {
+      font-size: 58px;
+    }
+  }
 `
 
 const Ocean = styled.div`
@@ -120,6 +128,10 @@ const Ocean = styled.div`
   bottom: 0;
   left: 0;
   background: #015871;
+
+  @media (max-width: 420px) {
+    display: none;
+  }
 `
 
 const WavePrimary = styled.div`
@@ -148,6 +160,10 @@ const WaveSecondary = styled.div`
 
 const AboutSection = styled.div`
   margin-top: 625px;
+
+  @media (max-width: 420px) {
+    margin-top: 100px;
+  }
 `
 
 const VideoContainer = styled.div`

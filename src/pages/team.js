@@ -126,7 +126,7 @@ const CardContainer = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (max-width: 380px) {
+  @media (max-width: 420px) {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
   }
