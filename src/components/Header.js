@@ -59,8 +59,4 @@ const Links = styled.div`
     text-transform: uppercase;
     margin-left: 20px;
   }
-
-  @media (max-width: 768px) {
-    display: none;
-  }
 `
