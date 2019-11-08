@@ -18,6 +18,7 @@ const Header = () => {
             <Link to="/robots">Robots</Link>
             <Link to="/sponsor">Sponsor</Link>
             <Link to="/team">Team</Link>
+            <Link to="https://www.otterchaos4512.launchcart.store">Shop</Link>
             <Link to="/contact">Contact</Link>
           </Links>
         </Container>
