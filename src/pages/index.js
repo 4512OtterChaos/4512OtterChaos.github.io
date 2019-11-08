@@ -32,8 +32,6 @@ const IndexPage = () => (
       <WaveSecondary />
     </Ocean>
 
-    {/* Sponsors */}
-
     {/* About */}
     <AboutSection>
       <TextContainer
@@ -43,7 +41,7 @@ const IndexPage = () => (
       />
       <VideoContainer>
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=qN16EgI6CkY"
+          url="https://www.youtube.com/watch?v=ah7CxGuOUOo"
           width="100%"
           height="500px"
         />
