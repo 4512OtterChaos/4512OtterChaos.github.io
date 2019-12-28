@@ -21,8 +21,8 @@ const IndexPage = () => (
       <span>INTRODUCING OTTER CHAOS</span>
       <h1>Learning and striving for better STEAM</h1>
       <p>
-        Otter Chaos Robotics is constantly striving for improvement in steam
-        through student lead building.
+        Otter Chaos Robotics is constantly striving for improvement in STEAM
+        through student led building.
       </p>
     </Hero>
 

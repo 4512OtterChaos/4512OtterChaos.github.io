@@ -38,11 +38,11 @@ const TeamPage = () => (
     <TextContainer
       caption="4 Total"
       title="Mentors"
-      paragraph="Our mentors help our our students with answering questions and knowledge from industry."
+      paragraph="Our mentors provide knowledge from the industry and help guide student learning."
     />
 
     <CardContainer>
-      <Card name="Zach Forester" title="Programming - Boeing" />
+      <Card name="Zachary Forster" title="Programming - Boeing" />
       <Card name="Patrick N." title="Design - Boeing" />
     </CardContainer>
 
