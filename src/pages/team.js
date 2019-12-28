@@ -44,6 +44,7 @@ const TeamPage = () => (
     <CardContainer>
       <Card name="Zachary Forster" title="Programming - Boeing" />
       <Card name="Patrick N." title="Design - Boeing" />
+      <Card name="Tom Clemens" title="Manufacturing" />
     </CardContainer>
 
     {/* Students */}
@@ -59,17 +60,17 @@ const TeamPage = () => (
       <Card name="Ethan Zoller" title="Business Director" />
       <Card name="Moses Tran" title="Media Director" />
       <Card name="Farrel Sudrajat" title="Branding Director" />
-      <Card name="Daisy Cisneros" title="Programming" />
-      <Card name="Jack Landers" title="Programming" />
-      <Card name="Ricardo Torres" title="Manufacturing" />
-      <Card name="Fiona Carpenter" title="Manufacturing" />
-      <Card name="Braeden Solorio" title="Manufacturing" />
-      <Card name="Casey Deckers" title="Manufacturing" />
-      <Card name="Scott Blacklock" title="Programming" />
-      <Card name="Hunter Lilley" title="Manufacturing" />
-      <Card name="Gregory Jabido" title="Design" />
-      <Card name="Graeme Richards" title="Design" />
-      <Card name="Francis Ricafrente" title="Programming" />
+      <Card name="Daisy Cisneros" title="" />
+      <Card name="Jack Landers" title="" />
+      <Card name="Ricardo Torres" title="" />
+      <Card name="Fiona Carpenter" title="Manufacturing Director" />
+      <Card name="Casey Deckers" title="" />
+      <Card name="Gregory Jabido" title="" />
+      <Card name="Graeme Richards" title="" />
+      <Card name="Francis Ricafrente" title="" />
+      <Card name="Carlos Campos" title="" />
+      <Card name="Muhammad Bahauddin" title="" />
+      <Card name="Sam" title="" />
     </CardContainer>
 
     {/* Footer */}
