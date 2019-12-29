@@ -20,16 +20,16 @@ export default Header
 const Card = styled.div`
   background: var(--main-grey-light);
   height: 10.8vmin;
-  width: 26.5vw;
+  width: 26.5vmin;
   border-radius: 8px;
   margin: 0.5em 0.5em;
 
   @media(max-width: 1124px){
-    width: 28vw;
+    width: 28vmin;
   }
 
   @media(max-width: 430px){
-    width: 38vw;
+    width: 38vmin;
   }
 `
 
