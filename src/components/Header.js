@@ -31,8 +31,8 @@ export default Header
 
 const Heading = styled.div`
   width: 100%;
-  height: 80px;
-  border-bottom: 1px var(--main-grey-light) solid;
+  height: calc(45px + 3.8vmin);
+  border-bottom: 2px var(--main-grey-light) solid;
 `
 
 const Container = styled.div`
@@ -44,10 +44,10 @@ const Container = styled.div`
   height: 100%;
 
   img {
-    width: 65px;
+    width: calc(40px + 2.7vmin);
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1124px) {
     width: 90%;
   }
 `
@@ -56,7 +56,7 @@ const Links = styled.div`
   text-align: right;
 
   a {
-    font-size: 14px;
+    font-size: calc(6px + .87vmin);
     text-transform: uppercase;
     margin-left: 20px;
   }

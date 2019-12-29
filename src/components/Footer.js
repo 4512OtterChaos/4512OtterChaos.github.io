@@ -42,24 +42,22 @@ const Header = () => {
 export default Header
 
 const Footer = styled.div`
-  margin: 200px auto;
-  max-width: 200px;
+  margin: 21.6vmin auto;
+  max-width: calc(3 * calc(24px + 2.6vmin + 3vw));
   display: flex;
 `
 
 const Button = styled.div`
-  width: 48px;
-  height: 48px;
+  width: calc(24px + 2.6vmin);
+  height: calc(24px + 2.6vmin);
   background: var(--main-grey-light);
   border-radius: 100%;
-  margin: 0 8px;
+  margin: 0 1.5vw;
 
   img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 50%;
     height: 95%;
-    width: 24px;
   }
 `

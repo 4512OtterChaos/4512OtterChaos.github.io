@@ -8,6 +8,12 @@ import Header from "../components/Header"
 import TextContainer from "../components/TextContainer"
 import Footer from "../components/Footer"
 
+import LogoBox from "../images/logos/otterchaos-box.png"
+import SponsorBox from "../images/logos/sponsors-blue.png"
+import ForeWave from "../images/logos/WaveFront.png"
+import MidWave from "../images/logos/WaveMid.png"
+import BackWave from "../images/logos/WaveBack.png"
+
 const IndexPage = () => (
   <Layout>
     {/* SEO */}
@@ -26,10 +32,14 @@ const IndexPage = () => (
       </p>
     </Hero>
 
-    {/* Wave */}
+    {/* Logo Art */}
     <Ocean>
-      <WavePrimary />
-      <WaveSecondary />
+      <WaveTertiary/>
+      <WaveSecondary/>
+      <WavePrimary/>
+      <SponsorPanel/>
+      <LogoSplash/>
+      <Fade/>
     </Ocean>
 
     {/* About */}
@@ -43,7 +53,7 @@ const IndexPage = () => (
         <ReactPlayer
           url="https://www.youtube.com/watch?v=ah7CxGuOUOo"
           width="100%"
-          height="500px"
+          height="54vmin"
         />
       </VideoContainer>
     </AboutSection>
@@ -58,7 +68,7 @@ export default IndexPage
 const HeroAnimation = keyframes`
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(100%);
   }
   to {
     opacity: 1;
@@ -66,36 +76,49 @@ const HeroAnimation = keyframes`
   }
 `
 
-const WaveAnimation = keyframes`
-  0% {
-    margin-left: 0;
+const WaveHeroAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(300vh);
   }
-  100% {
-    margin-left: -1600px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 `
 
-const SwellAnimation = keyframes`
-  0%, 100% {
-    transform: translate3d(0,-25px,0);
+const WaveScrollAnimation = keyframes`
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -100vw;
+  }
+`
+
+const WaveSwellAnimation = keyframes`
+  0% {
+    transform: translateY(0);
   }
   50% {
-    transform: translate3d(0,5px,0);
+    transform: translateY(-2.5vmin);
+  }
+  100% {
+    transform: translateY(0);
   }
 `
 
 const Hero = styled.div`
-  margin: 100px auto;
-  max-width: 768px;
+  margin: 7vmin auto;
+  max-width: 83vmin;
   text-align: center;
   animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 
   span {
-    font-size: 12px;
     font-family: "Inter", sans-serif;
     font-weight: bold;
     color: var(--main-grey-dark);
-    letter-spacing: 8px;
+    letter-spacing: 0.5em;
     animation: ${HeroAnimation} 0.8s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   }
 
@@ -105,71 +128,100 @@ const Hero = styled.div`
   }
 
   p {
-    max-width: 700px;
+    max-width: 76vmin;
     margin: 0 auto;
     animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   }
+`
+const Ocean = styled.div`
+  height: 35vmin;
+  width: 100%;
+  margin: 45vmin 0;
+  background: var(--main-blue-dark);
+  animation: ${WaveHeroAnimation} 4s cubic-bezier(0.2, 0.8, 0.2, 1) 1;
+`
 
-  @media (max-width: 420px) {
-    width: 90%;
+const SponsorPanel = styled.div`
+  background: url(${SponsorBox}) no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 10vmin;
+  top: calc(-2.95 * 12vmin);
+  max-width: 1200px;
 
-    h1 {
-      font-size: 58px;
-    }
+  @media(max-width: 1260px){
+    width: 95%;
   }
 `
 
-const Ocean = styled.div`
-  height: 5%;
+const LogoSplash = styled.div`
+  background: url(${LogoBox}) no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 0 auto;
+  position: relative;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #015871;
+  height: 12vmin;
+  top: calc(-6.75 * 12vmin);
+  max-width: 1200px;
 
-  @media (max-width: 420px) {
-    display: none;
+  @media(max-width: 1260px){
+    width: 95%;
   }
 `
 
 const WavePrimary = styled.div`
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg")
-    repeat-x;
-  position: absolute;
-  top: -198px;
-  width: 6400px;
-  height: 198px;
-  animation: ${WaveAnimation} 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
+  background: url(${ForeWave}) repeat-x;
+  background-size: 100% 100%;
+  position: relative;
+  width: 100%;
+  height: 12vmin;
+  top: calc(-3 * 11vmin);
+  animation: ${WaveScrollAnimation} 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite,
+    ${WaveSwellAnimation} 5s ease-in-out 2.2s infinite;
 `
 
 const WaveSecondary = styled.div`
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg")
-    repeat-x;
-  position: absolute;
-  top: -175px;
-  width: 6400px;
-  height: 198px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
-    ${SwellAnimation} 7s ease -1.25s infinite;
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
+  background: url(${MidWave}) repeat-x;
+  background-size: 100% 100%;
+  position: relative;
+  width: 100%;
+  height: 12vmin;
+  top: calc(-2 * 11vmin - 2.5vmin);
+  animation: ${WaveScrollAnimation} 11s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite,
+    ${WaveSwellAnimation} 6s ease-in-out 1.1s infinite;
+`
+
+const WaveTertiary = styled.div`
+  background: url(${BackWave}) repeat-x;
+  background-size: 100% 100%;
+  position: relative;
+  width: 100%;
+  top: calc(-1 * 11vmin - 5vmin);
+  height: 12vmin;
+  animation: ${WaveScrollAnimation} 14s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite,
+    ${WaveSwellAnimation} 7s ease-in-out infinite;
+`
+
+const Fade = styled.div`
+  background: linear-gradient(var(--main-blue-dark), #287eff, #62a1ff 45%, var(--main-white));
+  margin: -23.1vmin 0 11vmin;
+  width: 100%;
+  height: 70vmin;
 `
 
 const AboutSection = styled.div`
-  margin-top: 625px;
-
-  @media (max-width: 420px) {
-    margin-top: 100px;
-  }
+  margin-top: 90vmin;
 `
 
 const VideoContainer = styled.div`
-  margin: 35px auto;
+  margin: 0px auto;
   max-width: 1024px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1124px) {
     width: 90%;
-    margin: 0 auto;
   }
 `

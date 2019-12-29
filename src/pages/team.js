@@ -31,12 +31,12 @@ const TeamPage = () => (
 
     <CardContainer>
       <Card name="Neil Palachuk" title="Head Coach" />
-      <Card name="Steven Knoefler" title="Assistant Coach" />
+      <Card name="Stephen Knoefler" title="Assistant Coach" />
     </CardContainer>
 
     {/* Mentors */}
     <TextContainer
-      caption="4 Total"
+      caption="3 Total"
       title="Mentors"
       paragraph="Our mentors provide knowledge from the industry and help guide student learning."
     />
@@ -60,10 +60,10 @@ const TeamPage = () => (
       <Card name="Ethan Zoller" title="Business Director" />
       <Card name="Moses Tran" title="Media Director" />
       <Card name="Farrel Sudrajat" title="Branding Director" />
+      <Card name="Fiona Carpenter" title="Manufacturing Director" />
       <Card name="Daisy Cisneros" title="" />
       <Card name="Jack Landers" title="" />
       <Card name="Ricardo Torres" title="" />
-      <Card name="Fiona Carpenter" title="Manufacturing Director" />
       <Card name="Casey Deckers" title="" />
       <Card name="Gregory Jabido" title="" />
       <Card name="Graeme Richards" title="" />
@@ -93,7 +93,7 @@ const HeroAnimation = keyframes`
 `
 
 const Hero = styled.div`
-  margin: 100px auto;
+  margin: 10vmin auto;
   max-width: 768px;
   text-align: center;
   animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -117,18 +117,12 @@ const CardContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1124px) {
     width: 90%;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @media (max-width: 768px) {
-    width: 90%;
+  @media (max-width: 430px) {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 420px) {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
   }
 `

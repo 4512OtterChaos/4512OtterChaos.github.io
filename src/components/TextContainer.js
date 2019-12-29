@@ -17,26 +17,24 @@ const TextContainer = ({ caption, title, paragraph }) => {
 export default TextContainer
 
 const Container = styled.div`
-  margin: 100px auto 24px;
+  margin: 10vmin auto 24px;
   max-width: 1024px;
 
   span {
-    font-size: 16px;
     font-family: "San Francisco", sans-serif;
     color: var(--main-blue-dark);
     font-weight: 700;
   }
 
   h2 {
-    margin: 10px 0 20px 0;
+    margin: 0.6vh 0 2vh 0;
   }
 
   p {
-    margin-top: -16px;
+    margin-top: -1.4vh;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1124px) {
     width: 90%;
-    margin: 0 auto;
   }
 `

@@ -73,7 +73,7 @@ const HeroAnimation = keyframes`
 `
 
 const Hero = styled.div`
-  margin: 100px auto;
+  margin: 10vmin auto;
   max-width: 768px;
   text-align: center;
   animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -90,7 +90,7 @@ const Hero = styled.div`
     animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 
     a {
-      font-size: 20px;
+      font-size: 2.17vmin;
       color: var(--main-blue-dark);
       line-height: 30px;
       animation: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);

@@ -20,32 +20,37 @@ export default Header
 
 const Card = styled.div`
   background: var(--main-grey-light);
-  height: 180px;
-  width: 330px;
+  height: 19.5vmin;
+  width: 35.75vmin;
   border-radius: 8px;
-  margin: 8px 8px 0 0;
+  margin: 0.5em 0.5em;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1124px) {
     width: 90%;
-    margin: 0 auto 24px;
+    margin: 1.3vmin auto;
   }
 
-  @media (max-width: 420px) {
-    width: 100;
+  img {
+    position: relative;
+    margin-top: -10%;
+
+    @media (max-width: 1124px){
+      height: 3vmin;
+    }
   }
 `
 
 const Content = styled.div`
-  padding: 30px 20px;
+  padding: 3.57vmin 2.17vmin;
 
   h3 {
-    font-size: 16px;
+    margin: calc(4px + 0.5vmin) 0 0;
   }
 
   p {
-    font-size: 16px;
+    font-size: 1.75vmin;
     padding: 0;
-    margin: -15px 0;
-    line-height: 22px;
+    margin: 0 0;
+    line-height: 2.5vmin;
   }
 `

@@ -54,7 +54,7 @@ const SponsorPage = () => (
       <ReactPlayer
         url="https://www.youtube.com/watch?v=6R0nl--VB6g"
         width="100%"
-        height="500px"
+        height="54vmin"
       />
     </VideoContainer>
 
@@ -62,7 +62,7 @@ const SponsorPage = () => (
     <TextContainer
       caption="Perks"
       title="Benefits of sponsoring"
-      paragraph="We want to support our sponsors as much as they support us, here are some ways we are able to return the favor for our sponsors!"
+      paragraph="We want to support our sponsors as much as they support us, here are some ways we are able to return the favor to our sponsors!"
     />
 
     <CardContainer>
@@ -82,7 +82,7 @@ const SponsorPage = () => (
         img={Money}
         alt="Money"
         title="Tax Deductible"
-        text="Since FirstWA is an 501(c)(3) organization that allows for sponsorships to be tax deductible."
+        text="As a 501(c)(3) organization, FirstWA allows sponsorships to be tax deductible."
       />
       <BenefitCard
         img={Building}
@@ -108,7 +108,7 @@ const SponsorPage = () => (
     <TextContainer
       caption="Needs"
       title="What we are looking for"
-      paragraph="We need many resources for our upcoming season to be possible, here are some of the major needs."
+      paragraph="We need many resources for our upcoming season to be possible-- here are some of the major needs."
     />
 
     <CardContainer>
@@ -116,7 +116,7 @@ const SponsorPage = () => (
         img={Money}
         alt="Money"
         title="Money"
-        text="Our major need is money to pay for parts, travel, apparel, and much more for our upcoming season."
+        text="Our major need is money to pay for parts, travel, apparel, and much more to maintain the team."
       />
       <BenefitCard
         img={Mentors}
@@ -152,8 +152,8 @@ const HeroAnimation = keyframes`
 `
 
 const Hero = styled.div`
-  margin: 100px auto;
-  max-width: 768px;
+  margin: 10vmin auto;
+  max-width: 83vmin;
   text-align: center;
   animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 
@@ -164,13 +164,9 @@ const Hero = styled.div`
   }
 
   p {
-    max-width: 700px;
-    margin: 0 auto 30px;
+    max-width: 90%;
+    margin: 0 auto calc(10px + 2.2vmin);
     animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
-  }
-
-  @media (max-width: 420px) {
-    width: 90%;
   }
 `
 
@@ -178,13 +174,8 @@ const VideoContainer = styled.div`
   margin: 35px auto;
   max-width: 1024px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1124px) {
     width: 90%;
-    margin: 0 auto;
-  }
-
-  @media (max-width: 420px) {
-    margin-bottom: 100px;
   }
 `
 
@@ -194,28 +185,22 @@ const CardContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1124px) {
     width: 90%;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (max-width: 768px) {
-    width: 90%;
-    margin: 0 auto;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
   @media (max-width: 420px) {
-    margin-bottom: 100px;
+    margin-bottom: calc(40px + 6.5vmin);
   }
 `
 
 const Button = styled.a`
   border-radius: 4px;
+  font-size: 1em;
   background: var(--main-blue-dark);
-  font-size: 14px;
   font-weight: 700;
-  padding: 12px 16px;
+  padding: calc(6px + .7vmin) calc(8px + .87vmin);
   color: white;
 `
