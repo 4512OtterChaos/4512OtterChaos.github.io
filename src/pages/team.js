@@ -51,7 +51,7 @@ const TeamPage = () => (
     <TextContainer
       caption="16 Total"
       title="Students"
-      paragraph="Being a student lead organization, our students are the leaders of this team."
+      paragraph="Being a student led organization, our students are the leaders of this team."
     />
 
     <CardContainer>

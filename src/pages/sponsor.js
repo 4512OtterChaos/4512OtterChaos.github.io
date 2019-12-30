@@ -62,7 +62,7 @@ const SponsorPage = () => (
     <TextContainer
       caption="Perks"
       title="Benefits of sponsoring"
-      paragraph="We want to support our sponsors as much as they support us, here are some ways we are able to return the favor to our sponsors!"
+      paragraph="We want to support our sponsors as much as they support us-- here are some ways we can return the favor!"
     />
 
     <CardContainer>
@@ -70,7 +70,7 @@ const SponsorPage = () => (
         img={Shirt}
         alt="Apparel"
         title="Branding Promotion"
-        text="Get your brand logo showcased on our robot and banners."
+        text="Get your brand logo displayed on our robot and banners."
       />
       <BenefitCard
         img={Robot}
@@ -122,7 +122,7 @@ const SponsorPage = () => (
         img={Mentors}
         alt="Mentors"
         title="Mentors"
-        text="Having knowledgable people from industry to help our students is a huge help."
+        text="Having knowledgable people from industry to help our students is a huge asset."
       />
       <BenefitCard
         img={Resources}
