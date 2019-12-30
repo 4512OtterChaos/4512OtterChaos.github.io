@@ -17,6 +17,9 @@
   --main-blue-light: #d5e5ff;
   --main-blue: #80b3ff;
   --main-blue-dark: #0065fd;
+  --main-yellow: #e2e601;
+  --main-yellow-dark: #b6b902;
+  --main-red: #c20000;
 }
 
 body {
