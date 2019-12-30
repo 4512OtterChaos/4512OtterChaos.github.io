@@ -148,8 +148,8 @@ const SponsorPanel = styled.div`
   margin: 0 auto;
   position: relative;
   width: 100%;
-  height: 10vmin;
-  top: calc(-2.95 * 12vmin);
+  height: 22vmin;
+  top: calc(-3 * 12vmin);
   max-width: 1200px;
 
   @media(max-width: 1260px){
@@ -165,7 +165,7 @@ const LogoSplash = styled.div`
   position: relative;
   width: 100%;
   height: 12vmin;
-  top: calc(-6.75 * 12vmin);
+  top: calc(-7 * 12vmin - 6vmin);
   max-width: 1200px;
 
   @media(max-width: 1260px){
@@ -208,13 +208,13 @@ const WaveTertiary = styled.div`
 
 const Fade = styled.div`
   background: linear-gradient(var(--main-blue-dark), #287eff, #62a1ff 45%, var(--main-white));
-  margin: -23.1vmin 0 11vmin;
+  margin: -35.2vmin 0 11vmin;
   width: 100%;
-  height: 70vmin;
+  height: 60vmin;
 `
 
 const AboutSection = styled.div`
-  margin-top: 90vmin;
+  margin-top: 80vmin;
 `
 
 const VideoContainer = styled.div`
