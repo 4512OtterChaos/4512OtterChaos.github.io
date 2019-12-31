@@ -156,7 +156,7 @@ const Links = styled.div`
 const StreamAlert = styled.div`
   margin: 4px auto 0;
   width: 90%;
-  max-width: 1200px;
+  max-width: 1300px;
   height: calc(25px + 3.8vmin);
   border-radius: 6px;
   border: 2px solid var(--main-yellow-dark);
@@ -166,13 +166,13 @@ const StreamAlert = styled.div`
   transition: opacity 400ms ease-in-out;
   
   h3 {
-    font-size: calc(3px + 2vmin);
+    font-size: calc(2px + 2vmin);
     line-height: calc(25px + 3.8vmin);
     margin: 0;
   }
 
   a {
-    font-size: calc(3px + 2vmin);
+    font-size: calc(2px + 2vmin);
     line-height: calc(25px + 3.8vmin);
     margin: 0;
     position: relative;
