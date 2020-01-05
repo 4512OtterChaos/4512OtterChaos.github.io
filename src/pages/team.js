@@ -70,7 +70,7 @@ const TeamPage = () => (
       <Card name="Francis Ricafrente" title="" />
       <Card name="Carlos Campos" title="" />
       <Card name="Muhammad Bahauddin" title="" />
-      <Card name="Sam" title="" />
+      <Card name="Sam Mattson" title="" />
     </CardContainer>
 
     {/* Footer */}

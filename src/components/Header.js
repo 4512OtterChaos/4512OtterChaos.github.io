@@ -60,7 +60,7 @@ var events = [
   //'custom' parameters can be ommitted
   //Sort this list by earliest date please :)
   createEvent(4, 1, 2020, 1, "Season Kickoff", "https://www.twitch.tv/firstinspires/", "7AM"),
-  createEvent(1, 3, 2020, 3, "Glacier Peak Event", "https://www.twitch.tv/firstwa_red1/"),
+  createEvent(28, 2, 2020, 3, "Glacier Peak Event", "https://www.twitch.tv/firstwa_red1/"),
   createEvent(20, 3, 2020, 3, "Bellingham Event", "https://www.twitch.tv/firstwa_red1/")
 ];
 
