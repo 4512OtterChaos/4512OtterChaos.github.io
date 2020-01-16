@@ -67,6 +67,7 @@ const TeamPage = () => (
       <Card name="Casey Deckers" title="" />
       <Card name="Gregory Jabido" title="" />
       <Card name="Graeme Richards" title="" />
+      <Card name="Crist Ngo" title="" />
       <Card name="Francis Ricafrente" title="" />
       <Card name="Carlos Campos" title="" />
       <Card name="Muhammad Bahauddin" title="" />

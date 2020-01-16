@@ -111,7 +111,7 @@ const WaveSwellAnimation = keyframes`
 `
 
 const Hero = styled.div`
-  margin: 7vmin auto;
+  margin: 5vmin auto;
   max-width: 83vmin;
   text-align: center;
   animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -167,7 +167,7 @@ const LogoSplash = styled.div`
   position: relative;
   width: 100%;
   height: 12vmin;
-  top: calc(-7 * 12vmin - 6vmin);
+  top: calc(-7 * 12vmin - 7vmin);
   max-width: 1200px;
 
   @media(max-width: 1260px){
