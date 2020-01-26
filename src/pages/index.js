@@ -39,10 +39,15 @@ const IndexPage = () => (
       <WaveTertiary/>
       <WaveSecondary/>
       <WavePrimary/>
-      <SponsorPanel/>
+      <SponsorPanel>
+      </SponsorPanel>
       <LogoSplash/>
       <Fade/>
     </Ocean>
+
+    <DownChevron>
+      <img src={require("../images/icons/chevron-down.svg")} alt="Down Chevron"/>
+    </DownChevron>
 
     {/* About */}
     <AboutSection>
@@ -107,6 +112,36 @@ const WaveSwellAnimation = keyframes`
   }
   100% {
     transform: translateY(0);
+  }
+`
+
+const ChevronAnimation = keyframes`
+  0%{
+    transform: translateY(-20vh);
+    opacity: 0;
+  }
+  20%{
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  30%{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(3vh);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  60%{
+    transform: translateY(3vh);
+    opacity: 0.4;
+  }
+  70%{
+    transform: translateY(0);
+  }
+  100%{
+    opacity: 0;
   }
 `
 
@@ -206,6 +241,21 @@ const WaveTertiary = styled.div`
   height: 12vmin;
   animation: ${WaveScrollAnimation} 14s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite,
     ${WaveSwellAnimation} 7s ease-in-out infinite;
+`
+
+const DownChevron = styled.div`
+  width: 10%;
+  max-width: 10vmin;
+  opacity: 0;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 8vh;
+  left: calc(-55vmin + 50vw);
+  animation: ${ChevronAnimation} 3.5s ease-in-out 4s 2;
+
+  @media(max-width: 1060px){
+    left: calc(-48vmin + 50vw);
+  }
 `
 
 const Fade = styled.div`

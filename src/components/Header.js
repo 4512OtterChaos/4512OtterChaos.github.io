@@ -54,22 +54,22 @@ const months = [
 //Define events here, because I don't know web dev
 var events = [
   //createEvent(dayOfMonth, month, year, text, customLink, customDateNote)
-  //customDateNote is an additional string appended to the time signature. (e.g. "10AM")
-  //text format: "Description" = "Description on: (date)"
+  //customNote is an additional string appended to the time signature. (e.g. "10AM")
+  //formatting: "(eventText): (date) + (note) + (link)"
   //e.g. createEvent(4, 1, 2020, "Kickoff", "", "10AM") would be seen as "Kickoff: January 4 2020 - 10AM"
-  //'custom' parameters can be ommitted
-  //Sort this list by earliest date please :)
+  //note and link are optional
+  //Sort this list by earliest to latest dates
   createEvent(4, 1, 2020, 1, "Season Kickoff", "https://www.twitch.tv/firstinspires/", "7AM"),
-  createEvent(28, 2, 2020, 3, "Glacier Peak Event", "https://www.twitch.tv/firstwa_red1/"),
-  createEvent(20, 3, 2020, 3, "Bellingham Event", "https://www.twitch.tv/firstwa_red1/")
+  createEvent(28, 2, 2020, 3, "Glacier Peak", "https://www.twitch.tv/firstwa_red1/"),
+  createEvent(20, 3, 2020, 3, "Bellingham", "https://www.twitch.tv/firstwa_red1/")
 ];
 
-function createEvent(dayValue, monthValue, yearValue, lengthDays, eventText, linkString, dateNote){
+function createEvent(dayValue, monthValue, yearValue, lengthDays, eventText, linkString, customNote){
   const eventDate = new Date(yearValue, monthValue-1, dayValue);
   const eventEnd = new Date(eventDate.getTime() + ((lengthDays-1)*msDay));
   const text = eventText;
   const link = linkString;
-  const note = dateNote;
+  const note = customNote;
   var data = [
     eventDate,
     eventEnd,
@@ -122,7 +122,7 @@ function checkAlert(){
 
 const Heading = styled.div`
   width: 100%;
-  height: calc(45px + 3.8vmin);
+  height: calc(30px + 4vh);
   border-bottom: 2px var(--main-grey-light) solid;
 `
 
@@ -135,7 +135,7 @@ const Container = styled.div`
   height: 100%;
 
   img {
-    width: calc(40px + 2.7vmin);
+    width: calc(30px + 2.7vh);
   }
 
   @media (max-width: 1124px) {
