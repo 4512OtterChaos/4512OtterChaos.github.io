@@ -36,20 +36,21 @@ const TeamPage = () => (
 
     {/* Mentors */}
     <TextContainer
-      caption="3 Total"
+      caption="4 Total"
       title="Mentors"
       paragraph="Our mentors provide knowledge from the industry and help guide student learning."
     />
 
     <CardContainer>
-      <Card name="Zachary Forster" title="Programming - Boeing" />
-      <Card name="Patrick Naughton" title="Design - Boeing" />
+      <Card name="Zachary Forster" title="Programming" />
+      <Card name="Patrick Naughton" title="Design" />
       <Card name="Tom Clemens" title="Manufacturing" />
+      <Card name="Greg Cass" title="Design" />
     </CardContainer>
 
     {/* Students */}
     <TextContainer
-      caption="16 Total"
+      caption="17 Total"
       title="Students"
       paragraph="Being a student led organization, our students are the leaders of this team."
     />

@@ -57,16 +57,5 @@ const Hero = styled.div`
     max-width: 700px;
     margin: 0 auto;
     animation: ${HeroAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
-
-    a {
-      font-size: 2.17vmin;
-      color: var(--main-blue-dark);
-      line-height: 30px;
-      animation: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    }
-
-    a:hover {
-      color: var(--main-blue);
-    }
   }
 `

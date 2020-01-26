@@ -147,6 +147,7 @@ const Links = styled.div`
   text-align: right;
 
   a {
+    color: var(--main-black);
     font-size: calc(6px + .87vmin);
     text-transform: uppercase;
     margin-left: 20px;
