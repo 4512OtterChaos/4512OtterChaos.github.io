@@ -25,7 +25,7 @@ const IndexPage = () => (
     {/* Hero */}
     <Hero>
       <span>INTRODUCING OTTER CHAOS</span>
-      <h1>Learning and striving for better STEAM</h1>
+      <h1>Learning and striving for better STEM</h1>
       <p>
         Otter Chaos is a team for students, by students.
       </p>
@@ -54,7 +54,7 @@ const IndexPage = () => (
       <TextContainer
         caption="About"
         title="Meet Otter Chaos"
-        paragraph="We strive for learning and improving STEAM through our students by building robots! We are comprised of students from both Cascade and Everett high school."
+        paragraph="We strive for learning and improving STEM through our students by building robots! We are comprised of students from both Cascade and Everett high school."
       />
       <VideoContainer>
         <ReactPlayer
