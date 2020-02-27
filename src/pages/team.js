@@ -50,7 +50,7 @@ const TeamPage = () => (
 
     {/* Students */}
     <TextContainer
-      caption="17 Total"
+      caption="18 Total"
       title="Students"
       paragraph="Being a student led organization, our students are the leaders of this team."
     />
@@ -73,6 +73,7 @@ const TeamPage = () => (
       <Card name="Carlos Campos" title="" />
       <Card name="Muhammad Bahauddin" title="" />
       <Card name="Sam Mattson" title="" />
+      <Card name="Diego Corpening" title=""/>
     </CardContainer>
 
     {/* Footer */}

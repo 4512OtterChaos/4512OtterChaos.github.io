@@ -59,8 +59,8 @@ var events = [
   //e.g. createEvent(4, 1, 2020, "Kickoff", "", "10AM") would be seen as "Kickoff: January 4 2020 - 10AM"
   //note and link are optional
   //Sort this list by earliest to latest dates
-  createEvent(4, 1, 2020, 1, "Season Kickoff", "https://www.twitch.tv/firstinspires/", "7AM"),
-  createEvent(28, 2, 2020, 3, "Glacier Peak", "https://www.twitch.tv/firstwa_red1/"),
+  createEvent(4, 1, 2020, 1, "Season Kickoff", "https://www.twitch.tv/firstinspires", "7AM"),
+  createEvent(28, 2, 2020, 3, "Glacier Peak", "https://www.twitch.tv/firstinspires16"),
   createEvent(20, 3, 2020, 3, "Bellingham", "https://www.twitch.tv/firstwa_red1/")
 ];
 
