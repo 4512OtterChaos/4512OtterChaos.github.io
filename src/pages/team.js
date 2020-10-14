@@ -48,33 +48,16 @@ const TeamPage = () => (
       <Card name="Greg Cass" title="Design" />
     </CardContainer>
 
-    {/* Students */}
-    <TextContainer
-      caption="18 Total"
-      title="Students"
-      paragraph="Being a student led organization, our students are the leaders of this team."
-    />
-
-    <CardContainer>
-      <Card name="Henry Beason" title="Head Director" />
-      <Card name="Nolan Brown" title="Programming Director" />
-      <Card name="Ethan Zoller" title="Business Director" />
-      <Card name="Moses Tran" title="Media Director" />
-      <Card name="Farrel Sudrajat" title="Branding Director" />
-      <Card name="Fiona Carpenter" title="Manufacturing Director" />
-      <Card name="Daisy Cisneros" title="" />
-      <Card name="Jack Landers" title="" />
-      <Card name="Ricardo Torres" title="" />
-      <Card name="Casey Deckers" title="" />
-      <Card name="Gregory Jabido" title="" />
-      <Card name="Graeme Richards" title="" />
-      <Card name="Crist Ngo" title="" />
-      <Card name="Francis Ricafrente" title="" />
-      <Card name="Carlos Campos" title="" />
-      <Card name="Muhammad Bahauddin" title="" />
-      <Card name="Sam Mattson" title="" />
-      <Card name="Diego Corpening" title=""/>
-    </CardContainer>
+    <Hero>
+      <h2>Links</h2>
+      <Button
+        href="https://forms.gle/6mjonUx4DkYvzNPz6"
+        target="_blank"
+      >
+        Interest Survey
+      </Button>
+      
+    </Hero>
 
     {/* Footer */}
     <Footer />
@@ -128,4 +111,13 @@ const CardContainer = styled.div`
   @media (max-width: 430px) {
     grid-template-columns: repeat(2, 1fr);
   }
+`
+
+const Button = styled.a`
+  border-radius: 4px;
+  font-size: 1em;
+  background: var(--main-blue-dark);
+  font-weight: 700;
+  padding: calc(6px + .7vmin) calc(18px + .87vmin);
+  color: white;
 `
