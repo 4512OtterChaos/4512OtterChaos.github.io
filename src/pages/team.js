@@ -1,4 +1,5 @@
 import React from "react"
+import ReactTooltip from "react-tooltip"
 import styled, { keyframes } from "styled-components"
 
 import Layout from "../components/layout"
@@ -53,10 +54,32 @@ const TeamPage = () => (
       <Button
         href="https://forms.gle/6mjonUx4DkYvzNPz6"
         target="_blank"
+        data-tip="A survey that will help students find which sub-team they are interested in"
       >
         Interest Survey
       </Button>
       
+      <br/>
+      <br/>
+      <br/>
+      <Button
+        href=""
+        target="_blank"
+        data-tip='For CHS/EHS students interested in joining'
+      >
+        Student Application Form
+      </Button>
+      <br/>
+      <br/>
+      <br/>
+      <Button
+        href=""
+        target="_blank"
+        data-tip="Our team's canvas course with resources for learning"
+      >
+        Canvas Page
+      </Button>
+      <ReactTooltip place="top" type="warning" effect="solid" />
     </Hero>
 
     {/* Footer */}
