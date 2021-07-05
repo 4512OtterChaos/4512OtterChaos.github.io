@@ -66,7 +66,8 @@ const Footer = styled.div`
     margin: 21.6vmin auto 8vmin;
     display: flex;
     max-width: calc(4 * calc(24px + 2.6vmin + 3vw));
-    animation: ${EnterAnimation} 2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+    animation: ${EnterAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+    animation-delay: 0.25s;
 `
 
 const Button = styled.div`
