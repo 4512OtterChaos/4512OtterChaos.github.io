@@ -35,14 +35,6 @@ const Header = () => {
           </Button>
         </a>
       </Footer>
-      <Attribution>
-        <p>Icons made by <a href="https://fontawesome.com/" title="Font Awesome">Font Awesome</a>
-        <br />
-        <br />
-        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-          <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
-        </a></p>
-      </Attribution>
     </Layout>
   )
 }
@@ -67,20 +59,5 @@ const Button = styled.div`
     margin: 0 auto;
     width: 50%;
     height: 95%;
-  }
-`
-
-const Attribution = styled.div`
-  margin: 0 auto;
-  text-align: center;
-  
-  p{
-    font-size: 1.5vmin;
-    opacity: 0.7;
-  }
-
-  a{
-    font-size: 1.5vmin;
-    opacity: 0.7;
   }
 `
