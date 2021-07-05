@@ -50,7 +50,6 @@ const TeamPage = () => (
 	{/* Coaches */}
 	<TitledCard>
 		<TextContainer
-			caption="2 Total"
 			title="Coaches"
 			paragraph="Our coaches allow us to do our job as students and members of the robotics club."
 		/>
@@ -64,7 +63,6 @@ const TeamPage = () => (
 	{/* Mentors */}
 	<TitledCard>
 		<TextContainer
-			caption="4 Total"
 			title="Mentors"
 			paragraph="Our mentors provide knowledge from the industry and help guide student learning."
 		/>
@@ -96,8 +94,7 @@ const EnterAnimation = keyframes`
 	}
 `
 const TitleSpan = styled.div`
-	margin: 10vmin auto;
-	max-width: 768px;
+	margin: 10vmin 25% 10vmin 25%;
 	text-align: center;
 	display: flex;
 	flex-direction: row;
@@ -106,8 +103,7 @@ const TitleSpan = styled.div`
 	animation: ${EnterAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 
 	h1 {
-		margin-top: 10px;
-		margin-bottom: 10px;
+		margin: 0.25em auto;
 		animation: ${EnterAnimation} 1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 	}
 
@@ -116,40 +112,42 @@ const TitleSpan = styled.div`
 		margin: 0 auto;
 		animation: ${EnterAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 	}
+
+	@media (max-width: 1300px) {
+		margin: 8vmin 15% 8vmin 20%;
+		grid-template-columns: repeat(3, 1fr);
+	}
 `
 
 const CardContainer = styled.div`
-	margin: 20px auto 50px;
-	max-width: 1024px;
+	margin: 1vh auto 2vh;
+	max-width: 50%;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 
-	@media (max-width: 1124px) {
-		width: 90%;
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	@media (max-width: 430px) {
-		grid-template-columns: repeat(2, 1fr);
+	@media (max-width: 1400px) {
+		max-width: 70%;
 	}
 `
 const TitledCard = styled.div`
 	opacity: 0;
+	margin: 1vh auto 2vh;
 	animation: ${EnterAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 	animation-delay: 0.85s;
 `
 
 const Button = styled.a`
 	border-radius: 4px;
-	font-size: 1em;
+	font-size: 2.17vmin;
 	background: var(--main-blue-dark);
 	font-weight: 700;
-	padding: calc(6px + .7vmin) calc(18px + .87vmin);
+	padding: calc(3px + .75vmin) calc(9px + .9vmin);
 	color: white;
 `
 
 const Links = styled.div`
 	opacity: 0;
+	//margin: 0 auto 0 18vw;
 	animation: ${EnterAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 	animation-delay: 0.5s;
 `
