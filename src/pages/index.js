@@ -54,11 +54,11 @@ const IndexPage = () => (
             <TextContainer
                 caption="About"
                 title="Meet Otter Chaos"
-                paragraph="We strive for learning and improving STEM through our students by building robots! We are comprised of students from both Cascade and Everett high school."
+                paragraph="We strive for learning and improving STEM through our students by building robots! We are comprised of students from Cascade High School."
             />
             <VideoContainer>
                 <ReactPlayer
-                    url="https://www.youtube.com/watch?v=5InyKsVTSTU"
+                    url="https://www.youtube.com/watch?v=mPWVxLnCw0A"
                     width="100%"
                     height="54vmin"
                 />
