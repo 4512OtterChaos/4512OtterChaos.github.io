@@ -9,7 +9,7 @@ import TextContainer from "../components/TextContainer"
 import Footer from "../components/Footer"
 
 import LogoBox from "../images/logos/otterchaos-box.png"
-import SponsorBox from "../images/logos/sponsors-blue.png"
+import SponsorBox from "../images/logos/Sponsor Tiers.png"
 import ForeWave from "../images/logos/WaveFront.png"
 import MidWave from "../images/logos/WaveMid.png"
 import BackWave from "../images/logos/WaveBack.png"
