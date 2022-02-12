@@ -70,8 +70,8 @@ const TeamPage = () => (
 		<CardContainer>
 			<Card name="Zachary Forster" title="Programming" />
 			<Card name="Patrick Naughton" title="Design" />
-			<Card name="Tom Clemens" title="Manufacturing" />
-			<Card name="Greg Cass" title="Design" />
+			<Card name="Nolan Brown" title="Programming" />@
+			<Card name="Henry Beason" title="Design" />
 		</CardContainer>
 	</TitledCard>
 	

@@ -58,7 +58,7 @@ const IndexPage = () => (
             />
             <VideoContainer>
                 <ReactPlayer
-                    url="https://www.youtube.com/watch?v=mPWVxLnCw0A"
+                    url="https://www.youtube.com/watch?v=LCvg0CeXCv4A"
                     width="100%"
                     height="54vmin"
                 />
