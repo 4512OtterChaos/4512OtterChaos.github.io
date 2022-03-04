@@ -58,8 +58,8 @@ var events = [
     //note and link are optional
     //Sort this list by earliest to latest dates
     createEvent(4, 1, 2020, 1, "Season Kickoff", "https://www.twitch.tv/firstinspires", "7AM"),
-    createEvent(28, 2, 2020, 3, "Glacier Peak", "https://www.twitch.tv/firstinspires16"),
-    createEvent(20, 3, 2020, 3, "Bellingham", "https://www.twitch.tv/firstwa_red1/")
+    createEvent(5, 3, 2022, 2, "Glacier Peak", "https://www.thebluealliance.com/team/4512/2022"),
+    createEvent(19, 3, 2022, 2, "Sammamish", "https://www.thebluealliance.com/team/4512/2022")
 ];
 
 function createEvent(dayValue, monthValue, yearValue, lengthDays, eventText, linkString, customNote){
@@ -104,7 +104,7 @@ function checkAlert(){
     if(event){
         var customText = event[2];
         var customNote = event[4] ? " - "+event[4]+".":".";
-        var customLink = event[3] ? <a href={event[3]}>Click to watch stream</a>:"";
+        var customLink = event[3] ? <a href={event[3]}>Click to view matches</a>:"";
         var message = customText+": "+eventTime+customNote;
         return (
             <StreamAlert>
